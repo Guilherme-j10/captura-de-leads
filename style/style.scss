@@ -1,0 +1,139 @@
+// IMPORTAÇÃO DA FONT UTILIZADA NO PROJETO - GOOGLE FONT
+@import url('https://fonts.googleapis.com/css?family=Tomorrow:300,300i,400,400i,500,500i,600,600i,700&display=swap');
+
+// VARIÁVEIS DE CORES UTILIZADAS NO PROJETO
+$cor-um: #06f506;
+$cor-dois: #111; 
+$form: #333;
+
+// RESET 
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Tomorrow', sans-serif;
+    border: none;
+    font-weight: normal;
+    list-style: none;
+    text-decoration: none;
+}
+
+//ESTILO DA TAG </MAIN> 
+main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $cor-dois;
+    flex-direction: column;
+
+    // ESTILO DA TABELA ONDE SÃO RETORNADAS AS INFORMAÇÕES DO BANCO DE DADOS
+    table{
+        width: 45%;
+        background-color: $form;
+        border-collapse: collapse;
+
+        tr{
+            //ESTILO DO CABEÇALHO DA TABELA
+            th{
+                text-align: center;
+                padding: 12px;
+                background-color: $cor-um;
+            }
+
+            // ESTILO DO CORPO DA TABELA
+            td{
+                color: #fff;
+                text-align: center;
+                padding: 12px;
+
+                // ESTILO DA </FORM> QUE VAI DENTRO DE UM </TD> COM A FUNCIONALIDADE DE (DELETAR)
+                .tableform{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: none;
+                    box-shadow: none;
+
+                    // ESTILO DO INPUT
+                    input{
+                        width: 100%;
+                        border: none;
+                        background-color: #fd2c2c;
+                        color: #fff;
+                        padding: 6px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    // ESTILO DA FORM DA PAGINA INDEX.PHP - 'FORM QUE CAPTURA AS INFROMAÇÕES'
+    form{
+        width: 45%;
+        padding: 1.5%;
+        border-radius: 5px;
+        border: solid 2px $cor-um;
+        box-shadow: 0px 0px 0px 4px $form;
+        background-color: $form;
+
+        //ESTILO DA </HEADER> - 'TITULO DA FORM OU PAGINA'
+        header{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+
+            // ESTILO DO </H1> DA </HEADER.
+            h1{
+                color: $cor-um;
+                padding-bottom: 10px;
+                border-bottom: solid 1px $cor-um;
+            }
+        }
+
+        // ESTILO DO CONTAINER/</DIV> ONDE ESTÃO OS INPUTS
+        .line{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            // INICIANDO OS VALORES PADRÃO DO INPUT E DO BUTTON
+            input, button{
+                padding: 12px;
+                height: 45px;
+            }
+
+            //ESTILO DO INPUT
+            input{
+                width: 70%;
+            }
+
+            //ESTILO DO BUTTON
+            button{
+                width: 20%;
+                background-color: $cor-um;
+                color: $cor-dois;
+                cursor: pointer;
+            }
+        }
+    }
+
+    //ESTILO DO CONTAINER/</DIV> ONDE ESTÃO OS LINKS QUE REDIRECIONAM PARA A PAGINA USER E ADMIN
+    .links{
+        width: 100%;
+        margin-top: 15px; 
+        text-align: center;
+
+        //ESTILO DOS LINKS
+        a{
+            color: $cor-um;
+            margin: 0px 50px;
+            text-decoration: underline;
+        }
+    }
+}

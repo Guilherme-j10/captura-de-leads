@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Tomorrow:300,300i,400,400i,500,500i,600,600i,700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Tomorrow', sans-serif;
+  border: none;
+  font-weight: normal;
+  list-style: none;
+  text-decoration: none; }
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+  flex-direction: column; }
+  main table {
+    width: 45%;
+    background-color: #333;
+    border-collapse: collapse; }
+    main table tr th {
+      text-align: center;
+      padding: 12px;
+      background-color: #06f506; }
+    main table tr td {
+      color: #fff;
+      text-align: center;
+      padding: 12px; }
+      main table tr td .tableform {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        box-shadow: none; }
+        main table tr td .tableform input {
+          width: 100%;
+          border: none;
+          background-color: #fd2c2c;
+          color: #fff;
+          padding: 6px;
+          cursor: pointer; }
+  main form {
+    width: 45%;
+    padding: 1.5%;
+    border-radius: 5px;
+    border: solid 2px #06f506;
+    box-shadow: 0px 0px 0px 4px #333;
+    background-color: #333; }
+    main form header {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px; }
+      main form header h1 {
+        color: #06f506;
+        padding-bottom: 10px;
+        border-bottom: solid 1px #06f506; }
+    main form .line {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      main form .line input, main form .line button {
+        padding: 12px;
+        height: 45px; }
+      main form .line input {
+        width: 70%; }
+      main form .line button {
+        width: 20%;
+        background-color: #06f506;
+        color: #111;
+        cursor: pointer; }
+  main .links {
+    width: 100%;
+    margin-top: 15px;
+    text-align: center; }
+    main .links a {
+      color: #06f506;
+      margin: 0px 50px;
+      text-decoration: underline; }
+
+/*# sourceMappingURL=style.css.map */
