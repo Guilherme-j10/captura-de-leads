@@ -16,7 +16,7 @@
             return $url;
         }
 
-        //FUNÇÃO QUE INSETE OS DADOS NO BANCO DE DADOS
+        //FUNÇÃO QUE INSERE OS DADOS NO BANCO DE DADOS
         public function insert(){
             $pdo = conexao::conn();
             $url = DAOemails::url();
