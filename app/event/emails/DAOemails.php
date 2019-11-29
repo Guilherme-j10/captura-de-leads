@@ -81,7 +81,7 @@
                     </tr>
                 ";
             }
-            // CHAMA A FUNÇÃO 'DELETA' CASO O USUÁRIO CLIUE NO INPUT DELETAR DO FORM
+            // CHAMA A FUNÇÃO 'DELETA' CASO O USUÁRIO CLIQUE NO INPUT DELETAR DO FORM
             DAOemails::deleta();
         }
 
